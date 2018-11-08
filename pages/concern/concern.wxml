@@ -1,0 +1,14 @@
+<wxs module="util" src="../../utils/util.wxs"></wxs>
+<view class="table" wx:if="{{total>0}}">
+  <view class="tr">
+    <view class="th">用户昵称</view>
+    <view class="th">关注时间</view>
+  </view>
+  <block wx:for="{{concernList}}" wx:key="{{id}}">
+    <view class="tr table table-list">
+      <view class="td">{{item.concernName}}</view>
+      <view class="td">{{util.toDateString(item.createTime,'-')}}</view>
+    </view>
+  </block>
+</view>
+<view wx:else style=' text-align:center'><text>您还没有关注的人哟</text></view>

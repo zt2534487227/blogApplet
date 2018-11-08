@@ -1,0 +1,16 @@
+.user{ background-color: #eee; overflow: hidden; font-size: 32rpx}
+.user-hd{ background-color: #333; height: 200rpx}
+.user-bd{ background-color: #fff; padding: 0 20px 20px; overflow: hidden}
+.user-portrait image.portrait{ width: 180rpx; height: 180rpx; border: solid 10px #fff; border-radius: 120rpx; position: absolute; top: 100rpx}
+.user-portrait text{ margin-left:280rpx; float: left; margin-top:50rpx; font-weight: bold}
+.user-portrait image.arrow{ width: 30rpx; height: 40rpx; float: right; margin-top:55rpx}
+.list{ margin-top: 10px; overflow: hidden; background-color: #fff; padding: 0 20px}
+.list-head{ border-bottom: solid 1px #f1f1f1; height: 120rpx; line-height: 120rpx}
+.asd1{ width: 20px; height: 20px; float: left; margin: 40rpx 10rpx 0 0}
+.asd{ float: right; color: #333}
+.icons{ width: 65rpx; height: 67rpx; float: left; margin-top:26rpx}
+.words{ margin-left:30rpx; width: 500rpx; float: left}
+.shuzi{ color: #a2a2a2}
+.arrow{ width: 20rpx; height: 30rpx; float: right; margin-top:48rpx}
+.button{ padding-top:20px; background-color: #fff; margin-top:10px}
+.login{ width: 400rpx; background-color: #fff; border-radius: 30px; font-size: 32rpx; border: solid 1px #000}

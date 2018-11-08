@@ -1,0 +1,23 @@
+<view class='user'>
+  <view class='user-hd'>
+  </view>
+  <view class='user-bd'>
+    <navigator hover-class='String' url="/pages/login/login">
+    <view class='user-portrait'>
+        <image class='portrait' src='/pages/images/portrait.png'></image>   
+    <text>{{userName}}</text><image class='arrow' src='/pages/images/arrow.png'></image></view>
+    </navigator>
+  </view>
+   <view class='list'>
+       <view class='list-head'><image class='icons' src='/pages/images/feedback.png'></image>
+   <navigator class='words' hover-class='String' url="/pages/article/article">我的博客</navigator><image class='arrow' src='/pages/images/arrow-1.png'></image></view>
+   <view class='list-head'><image class='icons' src='/pages/images/customized.png'></image>
+    <navigator  class='words' hover-class='String' url="/pages/concern/concern">我的关注</navigator><image class='arrow' src='/pages/images/arrow-1.png'></image>
+    </view>
+   <view class='list-head'><image class='icons' src='/pages/images/personnel.png'></image>
+   <navigator class='words' hover-class='String' url="/pages/collection/collection">我的收藏</navigator><image class='arrow' src='/pages/images/arrow-1.png'></image></view>
+   <view class='list-head'><image class='icons' src='/pages/images/notice.png'></image>
+   <navigator class='words' hover-class='String' url="/pages/comment/comment">我的评论</navigator><image class='arrow' src='/pages/images/arrow-1.png'></image></view>
+  </view>
+  <view class='button'><button plain='' class='login' type='default' bindtap='logout'>退出</button></view>
+</view>

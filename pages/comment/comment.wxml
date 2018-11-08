@@ -1,0 +1,14 @@
+<wxs module="util" src="../../utils/util.wxs"></wxs>
+<view class="table" wx:if="{{total>0}}">
+  <view class="tr">
+    <view class="th">用户昵称</view>
+    <view class="th">评论时间</view>
+  </view>
+  <block wx:for="{{commentList}}" wx:key="{{id}}">
+    <view class="tr table table-list">
+      <view class="td">{{item.userName}}</view>
+      <view class="td">{{util.toDateString(item.commentTime,'-')}}</view>
+    </view>
+  </block>
+</view>
+<view wx:else style=' text-align:center'><text>您还没有任何评论哟</text></view>

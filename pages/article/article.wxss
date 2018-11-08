@@ -1,0 +1,33 @@
+page { display: block; min-height: 100%; background-color: #f1f1f1; font-size: 32rpx;width: 100%}
+.income{ padding:40rpx; float: left; background-color: #fff}
+.left{ float: left}
+.right{ float: right}
+.income-list{ float: left; margin-top:30rpx; color:#a2a2a2}
+.table{ height: 100rpx; line-height: 100rpx; background-color: #c8aa82; float: left; min-width: 100%; font-size: 26rpx}
+.table text{ color: #fff; width: 150rpx; float: left; text-align: center}
+.table-list{ background-color: #fff}
+.table-list text{ color: #000}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td {
+    justify-content: center;
+    text-align: center;
+}
+.th {
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+.lineText{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}

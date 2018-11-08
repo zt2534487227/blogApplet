@@ -1,0 +1,12 @@
+page{ font-size: 32rpx}
+view{display: block}
+.index-hd image{ width: 100%; display: block;height: 100%}
+.index-bd{ background-color: #fff;  border-radius: 16px; position: absolute; left: 30rpx; right: 30rpx; bottom: 30rpx}
+.kind-list-item{ padding: 30rpx 0; margin: 0px 30rpx; border-bottom:1px solid #f1f1f1; position: relative}
+.kind-list-item image{width: 58rpx; height: 58rpx; float:left}
+.kind-list-item input{margin:10rpx 0 0 60rpx; padding:0 5rpx}
+.mini-btn{ width: 248rpx; height: 82rpx; font-size: 32rpx; border-radius: 50rpx; background-color: #c8aa82; color: #fff; position: absolute; right:0rpx; top: 12rpx}
+.text{ color: #c8aa82; border-bottom:none}
+.login{ height: 86rpx; font-size: 32rpx; border-radius: 50rpx; border: solid 1px #000; background-color: #fff}
+.dengl{ border-bottom: none}
+.zhuce{ text-align: center; border-top: none; margin-bottom: 40rpx; font-size: 30rpx; color: #ff0000}

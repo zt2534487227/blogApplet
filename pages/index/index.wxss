@@ -1,0 +1,11 @@
+.personnel{ padding: 40rpx; margin: 20rpx; background-color: #f1f1f1; border-radius: 10px; font-weight: bold; font-size: 36rpx}
+.right{ float: right; display:inherit}
+.wenz{ display: block; font-size: 32rpx; font-weight: normal; margin-top: 40rpx}
+.wenz1{ margin-top: 10rpx}
+.tuij{ margin-top: 40rpx; width: 200rpx; font-size: 32rpx; font-weight: normal; background-color: #f90; color: #fff}
+.lineText{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}

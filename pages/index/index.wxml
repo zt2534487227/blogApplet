@@ -1,0 +1,9 @@
+<wxs module="util" src="../../utils/util.wxs"></wxs>
+<view class='personnel' wx:for='{{articleList}}'  wx:key="{{id}}" wx:for-index="groupindex">
+<navigator url='/pages/articleDetail/articleDetail?articleId={{item.id}}'>
+  <text class='lineText'>{{item.title}}</text>
+  <text class='wenz'>{{item.digest}}</text>
+  <text class='wenz'>{{item.userName}} {{item.tags}}  {{util.toDateString(item.publishTime,'-')}}      {{item.clickHit}} 浏览 {{item.replyHit}} 回复</text>
+  </navigator>
+</view>
+

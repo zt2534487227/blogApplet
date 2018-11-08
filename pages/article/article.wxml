@@ -1,0 +1,20 @@
+<wxs module="util" src="../../utils/util.wxs"></wxs>
+<view class="table" wx:if="{{total>0}}">
+  <view class="tr">
+    <view class="th" style='width:25%'>文章标题</view>
+    <view class="th" style='width:15%'>展现方式</view>
+    <view class="th" style='width:15%'>状态</view>
+    <view class="th" style='width:30%'>创建时间</view>
+  </view>
+  <block wx:for="{{articleList}}" wx:key="{{id}}">
+   <navigator url='/pages/articleDetail/articleDetail?articleId={{item.id}}'>
+    <view class="tr table table-list">
+      <view class="td lineText" style='width:25%'>{{item.title}}</view>
+      <view class="td" style='width:15%'>{{util.replace(item.showMode,"公开_1,私有_2")}}</view>
+      <view class="td" style='width:15%'>{{util.replace(item.articleStatus,"编辑中_0,已发布_1")}}</view>
+      <view class="td" style='width:30%'>{{util.toDateString(item.createTime,'-')}}</view>
+    </view>
+     </navigator>
+  </block>
+</view>
+<view wx:else style=' text-align:center'><text>您还没有发表过文章哟</text></view>

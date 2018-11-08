@@ -1,0 +1,46 @@
+var filters = {
+  toFix: function (value,n) {
+    return value.toFixed(n)//此处2为保留两位小数
+  },
+  replaceComma:function(val){
+    return val.replaceAll(",","");
+  },
+  replace: function (val, str) {
+    var array = [];
+    array = str.split(',');
+    var res = val;
+    for (var i = 0; i < array.length; i++) {
+      var item = array[i];
+      if (item.indexOf(val) >= 0) {
+        res = item.replace("_" + val, "");
+        break;
+      }
+    }
+    return res;
+  },
+  toDateString:function(val,partten){
+    var res = val;
+    if ("String" === res.constructor ){
+      res = getDate(val);
+    }
+    if ("Date" === res.constructor) {
+      var year = res.getFullYear();
+      var month = res.getMonth() + 1;
+      if (month.toString().length<2){
+        month = "0" + month;
+      }
+      var day = res.getDate();
+      if (day.toString().length < 2) {
+        day = "0" + day;
+      }
+      res = year + partten + month + partten + day;
+    }
+    return res;
+  }
+}
+module.exports = {
+  toFix: filters.toFix,
+  replace: filters.replace,
+  replaceComma: filters.replaceComma,
+  toDateString: filters.toDateString
+}

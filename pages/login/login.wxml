@@ -1,0 +1,8 @@
+<view class="index">
+ <view class='index-hd'><image src='/pages/images/bk0.jpg' mode='widthFix'></image></view>
+  <view class='index-bd' style='opacity:0.7'>
+  <view class='kind-list-item'><image src='/pages/images/phone.png'></image><input bindinput='addAccount' placeholder='账号'  maxlength='10' ></input></view>
+   <view class='kind-list-item'><image src='/pages/images/suo.png'></image><input placeholder='密码'  bindinput='addPassword' maxlength='11'  password='true'></input></view>
+   <view class='kind-list-item dengl'><button plain='' open-type='getUserInfo'  class='login'  bindgetuserinfo='loginsubmit'>登录</button></view>
+ </view>
+</view>
