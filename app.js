@@ -71,9 +71,9 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseHttpUrl:'https://www.zhendehenyouyisi.com',
-    baseImageUrl:'https://image.zhendehenyouyisi.com',
-    signSecret:'zRiN00nwdY1C1Kfruk5VWQ5e',
+    baseHttpUrl:'http://localhost:8080',
+    baseImageUrl:'',
+    signSecret:'',
     appId:'blog'
   }
 })
